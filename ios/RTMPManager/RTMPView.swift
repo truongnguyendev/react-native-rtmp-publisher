@@ -86,6 +86,7 @@ class RTMPView: UIView {
               onConnectionSuccess!(nil)
             }
            changeStreamState(status: "CONNECTING")
+           RTMPCreator.stream.publish(streamName as String)
            break
        
        case RTMPConnection.Code.connectFailed.rawValue:
