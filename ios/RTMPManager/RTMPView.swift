@@ -44,10 +44,6 @@ class RTMPView: UIView {
         .continuousExposure: true
     ]
     
-    RTMPCreator.stream.audioSettings = [
-        .bitRate: 128 * 1000
-    ]
-    
     RTMPCreator.stream.videoSettings = [
         .width: 720,
         .height: 1280,
