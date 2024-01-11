@@ -43,11 +43,15 @@ class RTMPView: UIView {
         .continuousAutofocus: true,
         .continuousExposure: true
     ]
-
+    
+    RTMPCreator.stream.audioSettings = [
+        .bitRate: 128 * 1000
+    ]
+    
     RTMPCreator.stream.videoSettings = [
         .width: 720,
         .height: 1280,
-        .bitrate: 3000 * 1024,
+        .bitrate: 2500 * 1000,
         .scalingMode: ScalingMode.cropSourceToCleanAperture
         
     ]
