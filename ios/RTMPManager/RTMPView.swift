@@ -40,6 +40,7 @@ class RTMPView: UIView {
     RTMPCreator.stream.captureSettings = [
         .fps: 30,
         .sessionPreset: AVCaptureSession.Preset.hd1280x720,
+        .isVideoMirrored: true,
         .continuousAutofocus: true,
         .continuousExposure: true
     ]
@@ -47,8 +48,8 @@ class RTMPView: UIView {
     RTMPCreator.stream.videoSettings = [
         .width: 720,
         .height: 1280,
-        .bitrate: 2500 * 1000,
-        .scalingMode: ScalingMode.cropSourceToCleanAperture
+        .bitrate: 2500 * 1000
+        // .scalingMode: ScalingMode.cropSourceToCleanAperture
         
     ]
 
