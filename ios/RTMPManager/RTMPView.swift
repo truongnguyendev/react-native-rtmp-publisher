@@ -54,7 +54,7 @@ class RTMPView: UIView {
     ]
 
     RTMPCreator.stream.attachAudio(AVCaptureDevice.default(for: .audio))
-    RTMPCreator.stream.attachCamera(DeviceUtil.device(withPosition: AVCaptureDevice.Position.back))
+    RTMPCreator.stream.attachCamera(DeviceUtil.device(withPosition: AVCaptureDevice.Position.front))
 
     RTMPCreator.connection.addEventListener(.rtmpStatus, selector: #selector(statusHandler), observer: self)
 
